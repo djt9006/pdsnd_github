@@ -4,6 +4,7 @@ import numpy as np
 
 """
 Import modules to handle the time, and data needs of the project
+Adding additional documentation for team members and staff contractors
 """ 
 
 
@@ -53,6 +54,7 @@ def get_filters():
     Variable called month is created for string text
     Or all if they want to see information for all the months
     If they enter in information that does not meet the expected string they will be prompted to try again
+    Updates are not made in this section
     """     
         
 # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
@@ -70,6 +72,7 @@ def get_filters():
     Variable called day is created for string text
     Or they can type all for all the days of the week
     If they enter in any unexpected strings they will be prompted to try again
+    July 18 - Contractors updates
     """    
         
     print('-'*40)
@@ -125,6 +128,7 @@ def load_data(city, month, day):
     Create a df for the time of start
     The datetime method converts string Date time into Python Date time object.
     The datetime method converts the Start Time df to a string Date time
+    New comments
     """  
 
     # extract month and day of week from Start Time to create new columns
