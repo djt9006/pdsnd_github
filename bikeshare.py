@@ -369,6 +369,7 @@ def user_stats(df):
     Using a try to run this block of code
     Var for the most common birth year
     The except error accounts for anything outside of the data in our df 
+    The result will be an error if the customer does not select the correct result
     """   
     
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -403,6 +404,7 @@ def main():
     established and var to increment
     While loop will run unless 2 is entered and that will break the loop
     While loop prints 5 lines of raw data 
+    Incrementing by 5 rows will be shut down at any time
     i increments the raw data by 5 rows if 1 is selected
     """
             
@@ -410,3 +412,5 @@ def main():
             
 if __name__ == "__main__":
     main()
+
+   
