@@ -183,7 +183,8 @@ def time_stats(df):
     
     """
     time.time is a method for obtaining a floating point number expressed in seconds
-    star_time is assigned this 
+    star_time is assigned this
+    time and star are numerical floats like 2.0 or 44.6 
     """
 
     # TO DO: display the most common month
@@ -245,6 +246,7 @@ def station_stats(df):
     Variable Start Station is created from a dataframe that counts the unique values
     Idxmax gets the row label of the maximum value
     Print shows the string with the start station with the max value
+    The output will show the station the customer started at most frequently 
     """ 
     
     # TO DO: display most commonly used end station
@@ -298,6 +300,7 @@ def trip_duration_stats(df):
     """
     Variable created by averaging the trip duration
     Print string text that also shows the average/mean divided by the number of minutes in an hour
+    The output will be a float result
     """  
     
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -370,6 +373,7 @@ def user_stats(df):
     Using a try to run this block of code
     Var for the most common birth year
     The except error accounts for anything outside of the data in our df 
+    The result will be an error if the customer does not select the correct result
     """   
     
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -404,6 +408,7 @@ def main():
     established and var to increment
     While loop will run unless 2 is entered and that will break the loop
     While loop prints 5 lines of raw data 
+    Incrementing by 5 rows will be shut down at any time
     i increments the raw data by 5 rows if 1 is selected
     """
             
@@ -411,3 +416,5 @@ def main():
             
 if __name__ == "__main__":
     main()
+
+   
