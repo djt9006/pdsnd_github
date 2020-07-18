@@ -179,7 +179,8 @@ def time_stats(df):
     
     """
     time.time is a method for obtaining a floating point number expressed in seconds
-    star_time is assigned this 
+    star_time is assigned this
+    time and star are numerical floats like 2.0 or 44.6 
     """
 
     # TO DO: display the most common month
@@ -241,6 +242,7 @@ def station_stats(df):
     Variable Start Station is created from a dataframe that counts the unique values
     Idxmax gets the row label of the maximum value
     Print shows the string with the start station with the max value
+    The output will show the station the customer started at most frequently 
     """ 
     
     # TO DO: display most commonly used end station
@@ -294,6 +296,7 @@ def trip_duration_stats(df):
     """
     Variable created by averaging the trip duration
     Print string text that also shows the average/mean divided by the number of minutes in an hour
+    The output will be a float result
     """  
     
     print("\nThis took %s seconds." % (time.time() - start_time))
